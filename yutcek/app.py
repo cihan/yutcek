@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-#Youtube üzerinden istenilen keyword aramasını yaptırıp sonuçları bir txt dosyasına yazdırmak.
+#Girilen anahtar kelimelerden youtube araması yaparak elde edilen sonuçları bir dosyaya işlemek için python dili ile gerçekleştirilmektedir.
 import urllib2
 
 main_url="http://gdata.youtube.com/feeds/api/videos?"
@@ -19,4 +19,3 @@ dosya=open("file.txt","w")
 #################veri içerisinden sadece başlık ve adresler çekilecek
 dosya.write(data)
 dosya.close()
-
